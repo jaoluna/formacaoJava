@@ -1,10 +1,9 @@
 //molde de uma conta
 public class Conta {
-    double saldo;
+    double saldo = ;
     int agencia;
     int numero;
-    String titular;
-    String cpf;
+    Cliente titular;
 
     public void deposita(double valor){
         this.saldo += valor;
