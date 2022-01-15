@@ -5,7 +5,7 @@ public class Conta {
     private int numero;
     private Cliente titular;
     //static é para deixar a variavel global, torna a variavel da classe;
-    private static int total;
+    private static int total = 0 ;
 
     public Conta(){
 
