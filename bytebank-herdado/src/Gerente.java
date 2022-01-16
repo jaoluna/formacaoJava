@@ -15,8 +15,8 @@ public class Gerente extends Funcionario {
 
 
     public double getBonificacao(){
-       return super.salario;
-       // super significa que está vindo da classe mãe 
+       return super.getBonificacao()+ super.getSalario();
+       // super significa que está vindo da classe mãe
    }
 
 }
