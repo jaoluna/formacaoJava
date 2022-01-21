@@ -15,5 +15,10 @@ public class TesteGerente {
         System.out.println(autenticou);
 
         System.out.println(gerente.getBonificacao());
+
+        Autenticavel referencia = new Cliente();
+
+
+
     }
 }

@@ -1,4 +1,5 @@
-public class Funcionario {
+//abstract obriga a criar metodos nas classes filhas e não permite a criacao de um objeto
+public abstract class Funcionario {
     private String nome;
     private String cpf;
     private double salario;
@@ -7,9 +8,10 @@ public class Funcionario {
 
     }
 
-    public double getBonificacao(){
-        return this.salario * 0.05;
-    }
+
+
+    //metodo sem corpo, não existe implementacao do metodo na mãe;
+    public abstract double getBonificacao();
 
     public String getNome() {
         return this.nome;

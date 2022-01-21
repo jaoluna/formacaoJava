@@ -1,23 +1,24 @@
-public class Gerente extends Funcionario {
-    private int senha;
+public class Gerente extends Funcionario implements Autenticavel{
 
-    public boolean autentica(int senha){
-        if (this.senha == senha){
-            return true;
-        }else {
-            return false;
-        }
+    private AutenticacaoUtil util;
+
+    public Gerente(){
+        this.util = new AutenticacaoUtil();
     }
-
-    public void setSenha(int senha) {
-        this.senha = senha;
-    }
-
 
     public double getBonificacao(){
         System.out.println("Chamando metodo de bonificacao do gerente");
-       return super.getBonificacao() + super.getSalario();
+       return super.getSalario();
        // super significa que está vindo da classe mãe
    }
 
+    @Override
+    public boolean autentica(int senha) {
+        return this.util.autentica(senha);
+    }
+
+    @Override
+    public void setSenha(int senha) {
+        this.util.setSenha(senha);
+    }
 }

@@ -20,9 +20,9 @@ public class TestaReferencias {
         System.out.println(controleBonificacao.getSoma());
 
 
-        Funcionario f = new Funcionario();
-        f.setSalario(2000);
-        controleBonificacao.registra(f);
+        //Funcionario f = new Funcionario();
+        //f.setSalario(2000);
+        //controleBonificacao.registra(f);
         System.out.println(controleBonificacao.getSoma());
 
 
@@ -32,11 +32,11 @@ public class TestaReferencias {
 
         System.out.println(controleBonificacao.getSoma());
 
-        Funcionario funcionario = new Funcionario();
-        funcionario.setSalario(1000);
-        controleBonificacao.registra(funcionario);
+        //Funcionario funcionario = new Funcionario();
+        //funcionario.setSalario(1000);
+        //controleBonificacao.registra(funcionario);
 
-        System.out.println(funcionario.getBonificacao());
+        //System.out.println(funcionario.getBonificacao());
         System.out.println(controleBonificacao.getSoma());
     }
 }
